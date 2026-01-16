@@ -15,8 +15,8 @@ let sendEmail = async (data) => {
       const mailOptions = {
         from: "khanhtranhuynh9@gmail.com", // Sender address
         to: data.email, // List of receivers
-        subject: "Shop Ban Dien Thoai", // Subject line
-        html: `<b>Ma Xac Nhan Cua Ban La: ${number}</b>`, // HTML body
+        subject: "SeaPhonex", // Subject line
+        html: `<b>Your confirmation code is: ${number}</b>`, // HTML body
       };
       transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
