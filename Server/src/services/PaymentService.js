@@ -156,7 +156,7 @@ const createPayment = async (body) => {
     amount: body.Oder_TotalPrice,
     description: `Lazada - Payment for the order #${body.app_trans_id}`,
     bank_code: "",
-    callback_url: `https://e727-2402-800-6343-9023-ccb2-7cb7-789e-dc48.ngrok-free.app/api/PaymentRouter/callback`, //post 8000
+    callback_url: `https://3b02-116-102-98-210.ngrok-free.app/api/PaymentRouter/callback`, //post 8000
   };
   const data =
     config.app_id +
