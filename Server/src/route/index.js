@@ -9,6 +9,7 @@ const optionRouter = require("./optionRouter");
 const comentRouter = require("./comentRouter");
 const AdminStatistical = require("./AdminStatistical");
 const downloadExcelExcel = require("./Excel");
+const TestRoute = require("./testRoute");
 
 const routes = (app) => {
   app.use("/api/Excel", downloadExcelExcel);
@@ -22,6 +23,7 @@ const routes = (app) => {
   app.use("/api/OderRouter", OderRouter);
   app.use("/api/PaymentRouter", PaymentRouter);
   app.use("/api/ProductRouter", ProductRouter);
+  app.use("/api/TestRoute", TestRoute);
 };
 
 module.exports = routes;
