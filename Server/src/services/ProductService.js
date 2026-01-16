@@ -216,6 +216,7 @@ let findIdProduct = async ({ Product_Color, Product_Memory, Product_Name }) => {
 let updateObj = async (data) => {
   return new Promise(async (resolve, reject) => {
     try {
+      console.log("first", data);
       const product = await db.Product.findOne({
         where: { id: data.id },
       });
